@@ -52,7 +52,8 @@
 					nowplaying = item['@attr'] && item['@attr']['nowplaying'] || false;
 
 					if (nowplaying) {
-					  song += ' <span class="nowplaying"><image src="images/icon_eq.gif" /> Listening Now</span>';
+					  //song += ' <span class="nowplaying"><image src="images/icon_eq.gif" /> Listening Now</span>';
+					  song += ' <span class="nowplaying"><image src="images/icon_eq.gif" /> a</span>';
 					}
 
           if (album != "") {
