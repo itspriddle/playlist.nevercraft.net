@@ -48,6 +48,12 @@
 					song = item.name;
 					artist = item.artist['#text'];
 					album = item.album['#text'];
+					
+					nowplaying = item['@attr'] && item['@attr']['nowplaying'] || false;
+
+					if (nowplaying) {
+					  song += ' <span class="nowplaying"><image src="images/icon_eq.gif" /> Listening Now</span>';
+					}
 
           if (album != "") {
             album = ' - ' + album;
