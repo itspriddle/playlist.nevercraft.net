@@ -1,12 +1,12 @@
 <html>
 <head>
   <title>My Music Problem</title>
-  <link rel="stylesheet" href="/style/engage.lastfm.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="style/playlist.css" type="text/css" media="screen" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/engage.lastfm.js"></script>
+  <script type="text/javascript" src="js/engage.lastfm.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(document).ready(function(){
-      $('div#lastfm').lastFM({
+      $('#lastfm').lastFM({
         username: 'nevercraft',
         apikey: '70c686a3d7aabbdf88c0565158a886f0',
         number: 50,
@@ -20,7 +20,23 @@
   </script>
 </head>
 <body>
-  <div id="lastfm">
+<div id="lastfm">
+  <div id="outer" class="" style="opacity:0.9">
+    <div id="wrapper" >
+      <img id="icon" src="images/lfm_overlay.png" alt="CD" class="lfm_overlay" />
+      <!-- <a href="#" class="lfm_art"><img src="/images/lfm_overlay.png" alt="CD" class="lfm_overlay" /></a> -->
+      <div id="textwrapper">
+        <div id="border"></div>
+        <div id="title"><span class="lfm_song"></span></div>
+        <div id="text">
+          <span class="lfm_artist"></span>
+          <span class="lfm_album"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div id="lastfm">
     <dl>
       <dt class="lfm_art">
         <a href="#"><img src="/images/lfm_overlay.png" alt="CD" class="lfm_overlay" /></a>
@@ -29,6 +45,6 @@
       <dd class="lfm_artist"></dd>
       <dd class="lfm_album"></dd>
     </dl>
-  </div>
+  </div> -->
 </body>
 </html>

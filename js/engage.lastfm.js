@@ -49,6 +49,10 @@
 					artist = item.artist['#text'];
 					album = item.album['#text'];
 
+          if (album != "") {
+            album = ' - ' + album;
+          }
+
 					$this.append(container);
 					
 					var $current = $this.children(':eq('+i+')');
@@ -56,8 +60,9 @@
 					$current.find('[class=lfm_song]').append(song);
 					$current.find('[class=lfm_artist]').append(artist);
 					$current.find('[class=lfm_album]').append(album);
-					$current.find('[class=lfm_art]').append("<img src='"+art+"' alt='Artwork for "+album+"'/>");
-					$current.find('a').attr('href', url).attr('title', 'Listen to '+song+' on Last.FM').attr('target', '_blank');
+          // $current.find('[class=lfm_art]').append("<img src='"+art+"' alt='Artwork for "+album+"'/>");
+          $current.find('[class=lfm_overlay]').replaceWith("<img id='icon' src='"+art+"' alt='Artwork for "+album+"' class='lfm_overlay'/>");
+          // $current.find('a').attr('href', url).attr('title', 'Listen to '+song+' on Last.FM').attr('target', '_blank');
 					
 					//callback
 					if(i==(settings.number-1)){

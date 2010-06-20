@@ -1,0 +1,16 @@
+/* Mono by Christopher Lobay is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA. */
+
+body { margin: 30px; padding: 0; position: relative; word-wrap: break-word; background: #333 url('../images/bg.jpg') repeat fixed;}
+
+#lastfm {width: 380px; margin: auto;}
+#verylow, #moderate, #normal, #high, #emergency {}
+#text-verylow, #text-moderate, #text-normal, #text-high, #text-emergency {}
+#outer { background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,.98)), to(rgba(0,0,0,0.9))); border: 1px solid rgba(0,0,0,0.7); -webkit-border-radius: 5px; margin: 20px 0;}
+#wrapper { background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.25)), to(rgba(255,255,255,0.0))); border-left: 1px solid rgba(255,255,255,0.10); border-top: 1px solid rgba(255,255,255,0.6); overflow: hidden; padding: 10px 20px 10px 53px; position: relative; -webkit-border-radius: 4px; z-index: 1; min-height: 34px; }
+#title, #text, #textwrapper, #icon { position: relative; }
+#title, #text { text-align: left; text-shadow: 0px -1px 1px rgba(0,0,0,0.7); z-index: 3; }
+#title { color: rgba(255,255,255,0.99); font: bold 10pt "Lucida Grande"; letter-spacing: 0.7pt; line-height: 16px; }
+#text { color: rgba(255,255,255,.7); font: bold 8pt "Lucida Grande"; margin: 2px 0 0 0; text-align: left; line-height: 15px; }
+#border { background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.0)), to(rgba(255,255,255,0.0)), color-stop(0.5, rgba(255,255,255,0.2))); bottom: 0; left: 0; position: absolute; top: 0; width: 1px; }
+#textwrapper { padding: 0 0 0 11px; -webkit-animation-duration: 0.7s; -webkit-animation-name: 'wrapperIn'; min-height: 34px; }
+#icon { min-height: 32px; min-width: 32px; max-height: 34px; max-width: 34px; left: 10px; opacity: 1; position: absolute; top: 10px; z-index: 2; }
