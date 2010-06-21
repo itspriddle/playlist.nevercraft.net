@@ -3,7 +3,8 @@
   <title>My Music Problem</title>
   <link rel="stylesheet" href="style/playlist.css" type="text/css" media="screen" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/engage.lastfm.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.relatize_date.js"></script>
+  <script type="text/javascript" src="javascripts/engage.lastfm.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(document).ready(function(){
       $('#lastfm').lastFM({
@@ -31,6 +32,7 @@
         <div id="text">
           <span class="lfm_artist"></span>
           <span class="lfm_album"></span>
+          <div class="lfm_played_at">now</div>
         </div>
       </div>
     </div>
